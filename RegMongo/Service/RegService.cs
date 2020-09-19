@@ -32,5 +32,12 @@ namespace RegMongo.Service
             reg.InsertOne(regModel);
             return regModel;
         }
+
+        public async Task<RegModel> Search(LoginModel loginModel)
+        {
+            var filter = Builders<RegModel>.Filter.Eq(x => x.Email, loginModel.Email);
+            return await reg.Find(filter).FirstOrDefaultAsync();    
+        }
+
     }
 }

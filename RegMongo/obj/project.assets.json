@@ -6312,20 +6312,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\Prashant\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Education\\WORK\\Development\\RegMongo\\RegMongo.csproj",
+      "projectUniqueName": "G:\\GitProject\\sayan_registration\\MongiReg\\RegMongo\\RegMongo.csproj",
       "projectName": "RegMongo",
-      "projectPath": "D:\\Education\\WORK\\Development\\RegMongo\\RegMongo.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\Education\\WORK\\Development\\RegMongo\\obj\\",
+      "projectPath": "G:\\GitProject\\sayan_registration\\MongiReg\\RegMongo\\RegMongo.csproj",
+      "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
+      "outputPath": "G:\\GitProject\\sayan_registration\\MongiReg\\RegMongo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Prashant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

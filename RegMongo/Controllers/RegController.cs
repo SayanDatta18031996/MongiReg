@@ -23,6 +23,15 @@ namespace RegMongo.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+        public ActionResult AfterLogin(RegModel user)
+        {
+            return View(user);
+        }
 
         // POST: Controller/Create
         [HttpPost]
@@ -35,7 +44,22 @@ namespace RegMongo.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(regModel);
-
         }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginModel loginModel)
+        {
+            if(ModelState.IsValid)
+            {
+                var user = await regService.Search(loginModel);
+                if (user != null)
+                {
+                    if (user.Password == loginModel.Password)
+                        return AfterLogin(user);
+                }
+                ViewBag.Message = "Name or password is wrong";
+            }
+            return View();
+        }
+
     }
 }
